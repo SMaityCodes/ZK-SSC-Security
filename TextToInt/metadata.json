@@ -1,0 +1,20 @@
+{
+  "Field1": "Hello World",
+  "Field2": [
+    "AA",
+    "BB",
+    "CC"
+  ],
+  "Field3": "/home/usr/lib",
+  "Field4": {
+    "sub1": "xx",
+    "sub2": "kk"
+  },
+  "Field5": {
+    "sub1": {
+      "SubSub1": "aa",
+      "SubSub2": "bb"
+    },
+    "sub2": "kk"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "text-to-int",
+  "version": "1.0.0",
+  "description": "-run metadataGeneration.js to create the metadata.json. in text format. -metadata.json is input to textToInt.js, which converts text to BigInt representation, and splits the URL into prefix and filename.  -IntFormat.json is generated output.",
+  "main": "metadataGeneration.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "circomlibjs": "^0.1.7",
+    "snarkjs": "^0.7.5"
+  }
+}
