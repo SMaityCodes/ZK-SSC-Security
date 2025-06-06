@@ -1,1 +1,3 @@
-
+-run metadataGeneration.js to create the metadata.json. in text format.
+-metadata.json is input to textToInt.js, which converts text to BigInt representation, and splits the URL into prefix and filename. 
+-IntFormat.json is generated output.
