@@ -1,0 +1,76 @@
+{
+    "layout_type": "step",
+    "layout_name": "fetch",
+    "expected_command": [
+      "dget",
+      "http://cdn.debian.net/debian/pool/main/g/grep/grep_2.12-2.dsc"
+    ],
+    "expected_materials": [
+      [
+        "REQUIRE",
+      "foo.cpp"
+      ],
+      [
+        "REQUIRE",
+        "src.cpp"
+      ],
+      [
+        "REQUIRE",
+        "foo.cpp"
+      ]
+    ],
+    "expected_products": [
+      [
+        "CREATE",
+        "file1.txt"
+      ],
+      [
+        "REQUIRE",
+        "src.cpp"
+      ],
+      [
+        "CREATE",
+        "file2.txt"
+      ]
+    ],
+ 
+    "link_type": "link",
+    "link_name": "fetch",
+    "link_command": [
+      "dget",
+    "http://cdn.debian.net/debian/pool/main/g/grep/grep_2.12-2.dsc"
+    ],
+    "link_materials_numRows":"2",
+    "link_materials": {
+        "/home/lukas/demo/foo.cpp": {
+      "sha256": "37887d8aecec66e75365abd8c41be94f75e7a3acf1d6b27fc121584f47281525"
+        },
+        "/home/lukas/demo/src.cpp": {
+      "sha256": 
+        "278610709068088787446961664930774117663402738301284259070649316813614963574"
+        },
+        "/home/lukas/demo/foo.cpp": {
+          "sha256": "37887d8aecec66e75365abd8c41be94f75e7a3acf1d6b27fc121584f47281525"
+            },
+            "/home/lukas/demo/src.cpp": {
+          "sha256": 
+            "278610709068088787446961664930774117663402738301284259070649316813614963574"
+            }
+    },
+    "link_products_numRows":"2",
+    "link_products": {
+      "/home/lukas/demo/file1.txt": {
+        "sha256": "37887d8aecec66e75365abd8c41be94f75e7a3acf1d6b27fc121584f47281525"
+      },
+        "/home/lukas/demo/file2.txt": {
+            "sha256": "37887d8aecec66e75365abd8c41be94f75e7a3acf1d6b27fc121584f47281525"
+          },
+          "/home/lukas/demo/src.cpp": {
+      "sha256": 
+        "278610709068088787446961664930774117663402738301284259070649316813614963574"
+        },
+        "/home/lukas/demo/file1.txt": {
+          "sha256": "37887d8aecec66e75365abd8c41be94f75e7a3acf1d6b27fc121584f47281525"
+        }
+        }
+  }
